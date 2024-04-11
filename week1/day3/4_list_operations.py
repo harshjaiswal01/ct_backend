@@ -50,10 +50,13 @@ print(fruit is copy_fruit)
 #default for start and stop are the beginning and end of the list
 #the stop index is non-inclusive, meaning the item located in the stop index wont be included in the slice
 
-key_lime_pie = ['slice1', 'slice2', 'slice3', 'slice']
+key_lime_pie = ['slice1', 'slice2', 'slice3', 'slice4']
 
 my_slice = key_lime_pie[0:1]
 print(my_slice)
 
 big_slice = key_lime_pie[1:3]
 print(big_slice)
+
+last_slice = key_lime_pie[3:4] #or key_lime_pie[3:] or key_lime_pie[-1:]
+print(last_slice)
