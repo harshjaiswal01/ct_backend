@@ -95,6 +95,7 @@ print("Length of Food list:", len(food))
 #-- sum() : give the sum total of all the numbers in a list
 #list must be entirely made of ints and/or floats
 
-nums = [1, 2, 4, 1, 9.3, len(food)]
+nums = [1, 2, 4, 1, 9.3]
 total = sum(nums)
 print(total)
+

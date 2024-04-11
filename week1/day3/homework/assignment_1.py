@@ -11,6 +11,8 @@ grades = [85, 90, 78, 88, 76, 95, 89, 80, 72, 93]
 grades.sort(reverse = True)
 print(grades)
 
+
+
 # Task 2: Calculate the average grade and display it.
 
 sum_of_grades = sum(grades)
@@ -23,5 +25,7 @@ print("Average grade of class is", average_grades)
 grades[7] = "Failed"
 grades[8] = "Failed"
 grades[9] = "Failed"
+
+
 
 print(grades)
