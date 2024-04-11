@@ -35,9 +35,25 @@ print(copy_fruit)
 #Common mistakes when trying to make copies, setting one list - to another
 
 nums = [1, 2, 3, 4]
-dnums = nums # This means whatever you do to dnums happens to nums
+dnums = nums # This means whatever you do to dnums happens to nums. so dont use it like this. its one data with two names
 print(dnums)
 dnums.pop()
 print(dnums)
 print(nums)
 
+#Identity operators 'is' and 'is not', returns a boolean value
+
+print(nums is dnums)
+print(fruit is copy_fruit)
+
+#List slicing --- list[start:stop] returns a sublist from start to stop index
+#default for start and stop are the beginning and end of the list
+#the stop index is non-inclusive, meaning the item located in the stop index wont be included in the slice
+
+key_lime_pie = ['slice1', 'slice2', 'slice3', 'slice']
+
+my_slice = key_lime_pie[0:1]
+print(my_slice)
+
+big_slice = key_lime_pie[1:3]
+print(big_slice)
