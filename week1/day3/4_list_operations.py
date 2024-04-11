@@ -60,3 +60,12 @@ print(big_slice)
 
 last_slice = key_lime_pie[3:4] #or key_lime_pie[3:] or key_lime_pie[-1:]
 print(last_slice)
+
+
+#Joining a list of strings ''.join(list)
+
+words = ["Hello", 'Im', 'getting', 'joined!']
+
+sentence = ' '.join(words) #' '.join(list) put a space to get spaced out or however you want to join
+
+print(sentence)
