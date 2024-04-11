@@ -27,7 +27,17 @@ print(list_3)
 #copying a list using .copy()
 
 fruit = ["Apple", 'Orange', 'Banana']
-copy_fruit = fruit.copy()
+copy_fruit = fruit.copy() # or fruit[:]
 print(copy_fruit)
 copy_fruit.pop()
 print(copy_fruit)
+
+#Common mistakes when trying to make copies, setting one list - to another
+
+nums = [1, 2, 3, 4]
+dnums = nums # This means whatever you do to dnums happens to nums
+print(dnums)
+dnums.pop()
+print(dnums)
+print(nums)
+
