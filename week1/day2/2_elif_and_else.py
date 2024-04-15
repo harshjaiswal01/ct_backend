@@ -11,3 +11,7 @@ elif money >= 10:
     print("Blah2")
 else:
     print("Stay home")
+
+#Else statements
+
+#Its a catchall and endcap

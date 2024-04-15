@@ -21,3 +21,4 @@ candy_jar = 'fulli'
 sweet_tooth = False
 
 print("Its Candy Time" if candy_jar == 'full' or sweet_tooth else 'Time to get it')
+

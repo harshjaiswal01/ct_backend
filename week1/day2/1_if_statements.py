@@ -31,7 +31,7 @@ else:
     print("Blah")
 
 #taking it a step further by using range
-if time >=12 and time <= 13 and not hungry:
+if time >=12 and time <= 13 and hungry:
     print("Lets go")
 
 #changing the range to be "in between"

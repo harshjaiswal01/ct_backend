@@ -5,6 +5,6 @@ feeling = "sick"
 if feeling == "sick":
     pass
 elif feeling == "decent":
-    # pass
+    pass
 else:
     print("Chill")

@@ -1,4 +1,4 @@
-#list comprehensions are inline for loops that product a list
+#list comprehensions are inline for loops that produce a list
 
 #syntax
 
