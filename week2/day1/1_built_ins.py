@@ -119,5 +119,13 @@ print(maximum)
 
 print(pow(4, 2))
 
+#-- divmod(num, divisor) : returns a tuple, quotient and the remainder
+
+print(divmod(8, 2))
+print(divmod(9, 2))
+
+tup = divmod(8, 5)
+print(tup)
+print(tup[0]) #to get the value
 
 
