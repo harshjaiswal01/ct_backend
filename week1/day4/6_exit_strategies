@@ -1,0 +1,44 @@
+#There are 3 main ways to exit a while loop
+#Break condition, False flags, Control Variable dependent on a State Change
+
+#Break terminates the loop immediately
+
+while True:
+    fav_food = input('Whats your favourite food?')
+
+    if fav_food == 'tacos':
+        print("Correct Answer, Enjoy")
+        break
+    else:
+        print("Wrong Answer, try again!")
+
+#--- Flags allow the rest of the code block to execute but terminate the loop after
+#can be nice for grand exits
+
+searching = True
+hours = 0
+
+while searching:
+    found = input("Has anyone found my keys? Yes or No: ")
+    if found == 'Yes':
+        searching = False
+    hours += 1
+    if not searching:
+        print("Thank you all for finding my keys.")
+        print("It only took us", hours, "Hours")
+
+#-- Control variables state changes so the condition is eventually false
+
+count = 0
+
+while count <= 10:
+    print('running my code!')
+    count += 1
+
+alist = ['this', 'that', 'the other']
+
+index = 0
+
+while index<len(alist):
+    print("Doing", alist[index])
+    index += 1
