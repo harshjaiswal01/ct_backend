@@ -1,10 +1,10 @@
-#USER DEFINED FUNCTIONS
+# USER DEFINED FUNCTIONS
 
-#They give us repeatable power
+# They give us repeatable power
 
-#Syntax
+# Syntax
 
-#def function_name(parameters): 
+# def function_name(parameters): 
 #   code block to be executed on function call
 
 #-- Simple function
@@ -27,5 +27,24 @@ def personalized_greet(name):
 personalized_greet("Harsh")
 personalized_greet("Dylan")
 
+#-- More complex Example
 
+# function to give info about ct classes
+
+def class_info(instructors, students):
+    print(f"This class is taught by {instructors[0]} and {instructors[1]}")
+    class_size = len(students)
+    print(f"It has {class_size} students")
+    for student in students:
+        print(student)
+
+instructors_146 = ['Dylan', 'Travis']
+student_146 = ['Harsh', 'AJ', 'Noach', 'Isaias', 'Mary']
+
+class_info(instructors_146, student_146)
+
+ins_144 = ["Ryan", 'Alex']
+stus_144 = ["Billy Bob", 'BArney', "Ted", "Neha", "Lily", "Lingpi"]
+
+class_info(ins_144, stus_144)
 
