@@ -17,6 +17,6 @@ def local_func():
     y = 7 #This is a local variable and can only be referenced within this function
     print(x) #Can call global variables into local scope
 
-print(y) #Cannot call local variables into global scope, It will give error
+# print(y) #Cannot call local variables into global scope, It will give error
 
 
