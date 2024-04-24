@@ -14,6 +14,33 @@ def average_grade(grades):
     j = sum_of_grades / i
     return j
 
+def high(grades):
+    highest = 0
+    lowest = grades[0]
+
+    for grade in grades:
+        a = grade
+        if a >= highest:
+            highest = a
+        elif a <= lowest:
+            lowest = a
+    answer = [highest, lowest]
+    return answer
+
+
+def alpha(grades):
+    for grade in grades:
+        if grade >= 90:
+            alphabetical_grades.append("A")
+        elif grade >= 80 and grade < 90:
+            alphabetical_grades.append("B")
+        elif grade >= 70 and grade < 80:
+            alphabetical_grades.append("C")
+        elif grade >= 60 and grade < 70:
+            alphabetical_grades.append("D")
+        else:
+            alphabetical_grades.append("F")
+
 
 grade_list = []
 
@@ -36,19 +63,11 @@ print('''
       ''')
 
 # Task 2: Implement a function to find the highest and lowest grade. 
-highest = 0
-lowest = grade_list[0]
 
-for grade in grade_list:
-    a = grade
-    if a >= highest:
-        highest = a
-    elif a <= lowest:
-        lowest = a
+high_and_low = high(grade_list)
+print(f"The highest grade in the class of {len(grade_list)} is {high_and_low[0]} and the lowest is {high_and_low[1]}")
 
-print(f"The highest grade in the class of {len(grade_list)} is {highest} and the lowest is {lowest}")
 
-alphabetical_grades = []
 
 print('''
       
@@ -57,17 +76,9 @@ print('''
 
 # Task 3 (BONUS): Create a feature that categorizes grades into letter grades (A, B, C, etc.).
 
-for grade in grade_list:
-    if grade >= 90:
-        alphabetical_grades.append("A")
-    elif grade >= 80 and grade < 90:
-        alphabetical_grades.append("B")
-    elif grade >= 70 and grade < 80:
-        alphabetical_grades.append("C")
-    elif grade >= 60 and grade < 70:
-        alphabetical_grades.append("D")
-    else:
-        alphabetical_grades.append("F")
+alphabetical_grades = []
+alpha(grade_list)
+
 
 # print(alphabetical_grades)
 print("The following are the grades and their corresponding letter grades:")
