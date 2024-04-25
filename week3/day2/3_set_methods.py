@@ -20,7 +20,7 @@ my_set.add("superman") #Nothing happens as he is already in there. No error.
 #-- set.update(iterable) : will add all the items of that iterable (set, tuple, string, list, dict) to my set
 
 marvel = ['iron man', 'thor', 'loki', 'dr. strange']
-my_set.add(marvel)
+my_set.update(marvel)
 print(my_set)
 
 movies = {'End Game' : 'Avengers', "Far from Home":"Spider-Man", "Dark Knight" : "Batman"}
